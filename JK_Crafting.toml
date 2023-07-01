@@ -1,0 +1,7 @@
+[main]
+total_crafts = 1
+time_limit = 0
+delay = 0
+is_trial = 0
+is_notification = 0
+is_background = 1

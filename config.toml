@@ -1,0 +1,102 @@
+[main]
+lang = "cn"
+client_area_size = [3440, 1392]
+bar_offset = [0, 23]
+window_offset = [8, 8, 8, 8]
+capture_mod = 3
+post_URL = "http://127.0.0.1:1999/command"
+
+[main.retainer]
+is_loop = 1
+gap = 605
+
+[main.hotkeys]
+"闲静" = "alt + numpad_1"
+"坚信" = "alt + numpad_2"
+"设计变动" = "alt + numpad_3"
+"专心致志" = "alt + numpad_4"
+"精修" = "alt + numpad_5"
+"掌握" = "alt + numpad_6"
+"俭约" = "alt + numpad_7"
+"长期俭约" = "alt + numpad_8"
+"崇敬" = "alt + numpad_9"
+"改革" = "alt + numpad_0"
+"阔步" = "-"
+"仓促" = "="
+"俭约加工" = "alt + 1"
+"坯料加工" = "alt + 2"
+"加工" = "alt + 3"
+"中级加工" = "ctrl + q"
+"上级加工" = "ctrl + e"
+"集中加工" = "ctrl + f"
+"集中制作" = "alt + e"
+"观察" = "shift + e"
+"注视加工" = "alt + q"
+"注视制作" = "shift + q"
+"俭约制作" = "1"
+"坯料制作" = "2"
+"制作" = "3"
+"高速制作" = "4"
+"秘诀" = "q"
+"工匠的神速技巧" = "e"
+"工匠的神技" = "r"
+"精密制作" = "f"
+"模范制作" = "t"
+"最终确认" = "v"
+"比尔格的祝福" = "ctrl + 1"
+
+[main.telegram]
+me = 610069961
+
+[client.cn]
+pos_talk = [1995, 1245, 30, 30]
+white_pixel_pos = [1704, 1306]
+white_pixel_rgb = [238, 238, 235]
+
+[client.en]
+dialog_square = [1235, 550, 1350, 600]
+harvest_square = [1235, 550, 1350, 600]
+back_square = [1090, 650, 1140, 680]
+white_pixel_pos = [1128, 850]
+white_pixel_rgb = [255, 255, 219]
+
+
+# # 钓鱼
+# fishing:
+#   ## 收藏价值: 0=off; 1=any; 677=677
+#   collection: 0
+#   ## 自动抛竿
+#   auto_casting: 1
+
+#   ## 提钩
+#   art_hook: e
+#   ## 精准
+#   quick_hook: r
+#   ## 大力
+#   buster_hook: t
+
+#   ## 轻杆
+#   light_pull: art_hook
+#   ## 中干
+#   fair_pull: art_hook
+#   ## 重杆
+#   heavy_pull: art_hook
+
+#   ## 轻杆
+#   buff_light_pull: quick_hook
+#   ## 中杆
+#   buff_fair_pull: buster_hook
+#   ## 重杆
+#   buff_heavy_pull: buster_hook
+
+# path:
+#   act_logdir: D:\apps\ACT_Cafe\AppData\Advanced Combat Tracker\FFXIVLogs
+
+# telegram:
+#   token: 637026224:AAFJ2GKZdbSnpcpY-RbhzjwKwM-n1Pxl3W0
+#   me: 610069961
+
+# baidu:
+#   appid: 19803488
+#   api_key: WKWiCBkW0AOomqcZWPSFUp2Z
+#   secret_key: s83xzCQm5tIo5dYW53tGUsCLW8OuW1XS

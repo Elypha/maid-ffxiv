@@ -1,0 +1,15 @@
+# python
+# python311 -m venv python
+# python/Scripts/pip.exe install -r requirements.txt
+
+# libs
+opencv-contrib-python
+pywin32
+pillow
+requests
+tomlkit
+
+# packs
+loguru
+azunyan
+git+https://github.com/Elypha/maid
