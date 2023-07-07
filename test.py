@@ -31,6 +31,7 @@ ffxiv = window_ffxiv.FFXIV(
     bar_offset=conf['main']['bar_offset'],
     window_offset=conf['main']['window_offset'],
     capture_mod=conf['main']['capture_mod'],
+    is_client_area=True,
     conf=conf,
     cache=cache
 )
