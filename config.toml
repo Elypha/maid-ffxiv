@@ -1,5 +1,6 @@
 [main]
 lang = "cn"
+title = "最终幻想XIV"
 client_area_size = [3440, 1392]
 bar_offset = [0, 23]
 window_offset = [8, 8, 8, 8]

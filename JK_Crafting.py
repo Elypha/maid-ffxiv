@@ -5,6 +5,7 @@ import time
 import cv2
 import maid.funcs as funcs
 import maid.logging_debug as logging
+import maid.window_ffxiv as window_ffxiv
 import numpy
 import tomlkit
 
@@ -68,8 +69,8 @@ IMG_Q_HIGH         = cv2.imread(fR'{THIS_DIR}\assets\{LANG}\crafting_status_high
 IMG_Q_MAX          = cv2.imread(fR'{THIS_DIR}\assets\{LANG}\crafting_status_max.png')
 IMG_Q_LOW          = cv2.imread(fR'{THIS_DIR}\assets\{LANG}\crafting_status_low.png')
 
-ffxiv = funcs.FFXIV(
-    handle=funcs.get_hwnd('ffxiv', LANG),
+ffxiv = window_ffxiv.FFXIV(
+    handle=funcs.get_hwnd(conf['main']['title']),
     client_area_size=conf['main']['client_area_size'],
     bar_offset=conf['main']['bar_offset'],
     window_offset=conf['main']['window_offset'],

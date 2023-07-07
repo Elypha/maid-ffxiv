@@ -3,6 +3,7 @@ import time
 
 import cv2
 import maid.funcs as funcs
+import maid.window_ffxiv as window_ffxiv
 import tomlkit
 from line_profiler import LineProfiler
 
@@ -23,9 +24,9 @@ WHITE_PIXEL_POS = tuple(conf['client'][LANG]['white_pixel_pos'])
 WHITE_PIXEL_RGB = tuple(conf['client'][LANG]['white_pixel_rgb'])
 
 
-ffxiv = funcs.FFXIV(
+ffxiv = window_ffxiv.FFXIV(
     # handle=331862,
-    handle=funcs.get_hwnd('ffxiv', LANG),
+    handle=funcs.get_hwnd(conf['main']['title']),
     client_area_size=conf['main']['client_area_size'],
     bar_offset=conf['main']['bar_offset'],
     window_offset=conf['main']['window_offset'],

@@ -4,6 +4,7 @@ import winsound
 import cv2
 import maid.funcs as funcs
 import maid.logging_debug as logging
+import maid.window_ffxiv as window_ffxiv
 import tomlkit
 
 # THIS_DIR = R'D:\JK Maid\FFXIV'
@@ -23,20 +24,20 @@ logger.debug(F'Cache: {THIS_DIR}\cache.toml')
 with open(fR'{THIS_DIR}/JK_Crafting.toml', 'r', encoding='utf8') as f:
     cache = tomlkit.load(f)
 
-LANG          = conf['main']['lang']
+LANG = conf['main']['lang']
 
-POS_TALK      = tuple(conf['client'][LANG]['pos_talk'])
+POS_TALK = tuple(conf['client'][LANG]['pos_talk'])
 
 # init
-IMG_TALK      = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\npc_talk_normal.png")
-IMG_86      = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\leaves_lvl86.png")
-IMG_LEVE = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\leaves_lvl86_jujiang.png")
-IMG_RECEIVE  = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\leaves_receive.png")
+IMG_TALK         = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\npc_talk_normal.png")
+IMG_86           = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\leaves_lvl86.png")
+IMG_LEVE         = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\leaves_lvl86_jujiang.png")
+IMG_RECEIVE      = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\leaves_receive.png")
 IMG_LEVE_FINISH  = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\leve_craft_finish.png")
 
 
-ffxiv = funcs.FFXIV(
-    handle=funcs.get_hwnd('ffxiv', LANG),
+ffxiv = window_ffxiv.FFXIV(
+    handle=funcs.get_hwnd(conf['main']['title']),
     client_area_size=conf['main']['client_area_size'],
     bar_offset=conf['main']['bar_offset'],
     window_offset=conf['main']['window_offset'],
@@ -86,7 +87,7 @@ def main_loop():
     ffxiv.key_press('decimal_key')
 
     # 交理符
-    ffxiv.mouse_moveTo((1948, 806))
+    ffxiv.mouse_moveTo((1960, 840))
     ffxiv.mouse_R()
     # 点击对话框
     logger.trace('点击对话框')
@@ -104,7 +105,7 @@ def main_loop():
     ffxiv.key_press('numpad_0')
 
     # 接
-    ffxiv.mouse_moveTo((1423, 792))
+    ffxiv.mouse_moveTo((1440, 840))
 
     logger.trace('等待idle')
     ffxiv.wait_idle()
