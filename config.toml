@@ -1,10 +1,10 @@
 [main]
 lang = "cn"
 title = "最终幻想XIV"
-client_area_size = [3440, 1392]
-bar_offset = [0, 23]
-window_offset = [8, 8, 8, 8]
+content_size = [3440, 1392]
+window_offset = [-8, -31]
 capture_mod = 3
+is_client_area = true
 post_URL = "http://127.0.0.1:1999/command"
 
 [main.retainer]

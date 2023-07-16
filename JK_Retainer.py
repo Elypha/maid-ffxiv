@@ -45,11 +45,10 @@ IMG_QUIT      = cv2.imread(RF"{THIS_DIR}\assets\{LANG}\guyuan_quit.png")
 
 ffxiv = window_ffxiv.FFXIV(
     handle=funcs.get_hwnd(conf['main']['title']),
-    client_area_size=conf['main']['client_area_size'],
-    bar_offset=conf['main']['bar_offset'],
+    content_size=conf['main']['content_size'],
     window_offset=conf['main']['window_offset'],
     capture_mod=conf['main']['capture_mod'],
-    is_client_area=True,
+    is_client_area=conf['main']['is_client_area'],
     conf=conf,
     cache=cache
 )
